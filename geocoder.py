@@ -19,7 +19,7 @@ while True:
 coordinates = []
 
 for loc in location:
-    URL = 'https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyCfPlk4iiR9xCPn8_0ETiPCrjHXd0kqHPA' \
+    URL = 'https://maps.googleapis.com/maps/api/geocode/json?key=your_API_key' \
 '&sensor=false&language=ko&address={}'.format(loc)
 
     response = requests.get(URL)
