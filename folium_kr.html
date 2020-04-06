@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5cd2aa16be4a49028ba488a4b57e7b6a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_5cd2aa16be4a49028ba488a4b57e7b6a" ></div>
+        
+</body>
+<script>    
+    
+            var map_5cd2aa16be4a49028ba488a4b57e7b6a = L.map(
+                "map_5cd2aa16be4a49028ba488a4b57e7b6a",
+                {
+                    center: [37.48737153333334, 127.00799333333333],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_23cb2c1a8b9849a99a516319ac30bf59 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5cd2aa16be4a49028ba488a4b57e7b6a);
+        
+    
+            var marker_cluster_c673417042394e14b8893819f6f74f2f = L.markerClusterGroup(
+                {}
+            );
+            map_5cd2aa16be4a49028ba488a4b57e7b6a.addLayer(marker_cluster_c673417042394e14b8893819f6f74f2f);
+        
+    
+            var marker_b82ddd04ce0e4da8857bfc6c6b5d9b9d = L.marker(
+                [37.599397, 126.8651427],
+                {}
+            ).addTo(map_5cd2aa16be4a49028ba488a4b57e7b6a);
+        
+    
+            var icon_1c9127430029409797cc6e1cd652ab9d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b82ddd04ce0e4da8857bfc6c6b5d9b9d.setIcon(icon_1c9127430029409797cc6e1cd652ab9d);
+        
+    
+        var popup_bdfcd00a954845169f70337b7ed8d389 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5fc1252506af4911bb88b03c800eaa57 = $(`<div id="html_5fc1252506af4911bb88b03c800eaa57" style="width: 100.0%; height: 100.0%;">한국항공대학교</div>`)[0];
+            popup_bdfcd00a954845169f70337b7ed8d389.setContent(html_5fc1252506af4911bb88b03c800eaa57);
+        
+
+        marker_b82ddd04ce0e4da8857bfc6c6b5d9b9d.bindPopup(popup_bdfcd00a954845169f70337b7ed8d389)
+        ;
+
+        
+    
+    
+            var marker_763ff7fc1df24f49aa5a444f87098ef1 = L.marker(
+                [37.3311736, 127.0921293],
+                {}
+            ).addTo(map_5cd2aa16be4a49028ba488a4b57e7b6a);
+        
+    
+            var icon_a152b08874a2484ea7067c2a4c96e9dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_763ff7fc1df24f49aa5a444f87098ef1.setIcon(icon_a152b08874a2484ea7067c2a4c96e9dc);
+        
+    
+        var popup_34d13ca419d8458193f327dbad2ff9c6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_348878ce44314ab99944bd362753b93b = $(`<div id="html_348878ce44314ab99944bd362753b93b" style="width: 100.0%; height: 100.0%;">수지고등학교</div>`)[0];
+            popup_34d13ca419d8458193f327dbad2ff9c6.setContent(html_348878ce44314ab99944bd362753b93b);
+        
+
+        marker_763ff7fc1df24f49aa5a444f87098ef1.bindPopup(popup_34d13ca419d8458193f327dbad2ff9c6)
+        ;
+
+        
+    
+    
+            var marker_5d3b326a33ab4d1cb726a599af4118e2 = L.marker(
+                [37.531544, 127.066708],
+                {}
+            ).addTo(map_5cd2aa16be4a49028ba488a4b57e7b6a);
+        
+    
+            var icon_afe4550a64004661af008a55bfd3e60e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5d3b326a33ab4d1cb726a599af4118e2.setIcon(icon_afe4550a64004661af008a55bfd3e60e);
+        
+    
+        var popup_5ae29188dba24eb48ff300f712e17abb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_15d59ef18dba44d697964052105af9cf = $(`<div id="html_15d59ef18dba44d697964052105af9cf" style="width: 100.0%; height: 100.0%;">뚝섬유원지</div>`)[0];
+            popup_5ae29188dba24eb48ff300f712e17abb.setContent(html_15d59ef18dba44d697964052105af9cf);
+        
+
+        marker_5d3b326a33ab4d1cb726a599af4118e2.bindPopup(popup_5ae29188dba24eb48ff300f712e17abb)
+        ;
+
+        
+    
+</script>
